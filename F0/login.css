@@ -80,9 +80,9 @@
  {
   position:relative;
   left:40px;
-  top:-30px;
+  top:-45px;
   height:220px;
-  width:250px;
+  width:400px;
   padding:30px 5px 5px 5px;
   color:#fff;
   }
@@ -99,8 +99,8 @@
   }
   .check
   {
-   margin: 10px 10px 10px 0;
-   width: 80px;
+   margin: 10px 30px 10px 0;
+   width: 90px;
    height: 30px;
    color:#808080;
   }

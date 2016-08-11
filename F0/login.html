@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1">
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="login.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="jquery-displaypsw.js"></script>
 </head>
 <body>            <!--target="_blank" 好像还要用到js 暂时不做处理-->
    <div class="header">
@@ -18,7 +20,7 @@
         Privacy</a>
       <li> <a href="https://help.github.com/articles/github-security/" target="_blank" >
         Security</a>
-      <li> <a href="https://github.cidntact" target="_blank"  >
+      <li> <a href="https://github.cidntact" target="_blank" >
         Contact</a>
     </ul>
    </div>
@@ -34,8 +36,9 @@
                    <input class="inputframe" type="text" name="username"  placeholder=" plesase enter username">
                    <p id="kongge">
                     password <a href="https://github.com/password_reset">Forget?</a>
-                    <input class="inputframe" type="password" name="password" placeholder=" please enter password"></p></p>
+                    <input id="psw" class="inputframe" type="password" name="password" placeholder=" please enter password"></p></p>
                 <input type="checkbox"> remember the password?</p>
+                <input id="showpsw" type="checkbox"> show password? </br>
                 <input class="check" type="button" value="log in" action="login.asp" method="get"/>
                 <input class="check" type="button" value="register" action="login.asp" method="get"/>
                 </br>
@@ -45,6 +48,5 @@
    </div>
    <div class="footer">
      <p> Copyright amilyxy </p>
-   </div>
 </body>
 </html>
