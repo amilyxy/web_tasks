@@ -26,6 +26,7 @@ ul#num>li    /*只需要对num下的li进行悬浮修饰*/
   width: 1000px;
   height: 608px;
   position: absolute;
+  opacity: 0;
 }
 #rchange
 {
@@ -57,8 +58,4 @@ ul#num>li    /*只需要对num下的li进行悬浮修饰*/
   list-style-type: none;
   left:-30px;
   top:-10px;
-}
-#num1,#num2,#num3,#num4,#num5,#num6
-{
-  opacity:0;
 }
