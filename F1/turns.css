@@ -1,9 +1,7 @@
-body
-{
+body {
   background-image: url(pics/bcg.jpg);
 }
-ul#num>li    /*只需要对num下的li进行悬浮修饰*/
-{
+ul#num>li {   /*只需要对num下的li进行悬浮修饰*/
   float: left;    /*num 相当于导航 水平显示 */
   margin: 15px;
   padding: 6px 12px;
@@ -11,8 +9,7 @@ ul#num>li    /*只需要对num下的li进行悬浮修饰*/
   border-radius: 50%;   /*圆角特效 如果不支持只能添加背景图片的形式吧*/
   cursor: pointer;   /*设置鼠标形状*/
 }
-#frame
-{
+#frame {
   width: 1000px;
   height: 608px;
   padding: 10px;
@@ -21,41 +18,36 @@ ul#num>li    /*只需要对num下的li进行悬浮修饰*/
   left: 360px;
   top: 260px;
 }
-.pic
-{
+.pic {
   width: 1000px;
   height: 608px;
   position: absolute;
   opacity: 0;
 }
-#rchange
-{
-  border:2px solid #000;
+#rchange {
+  border: 2px solid #000;
   position: absolute;
   border-radius: 50%;
-  border:3px solid rgba(166, 166, 166,0.2);
-  left:990px;
-  top:254px;
+  border: 3px solid rgba(166, 166, 166,0.2);
+  left: 990px;
+  top: 254px;
 }
-#lchange
-{
-  position:absolute;
+#lchange {
+  position: absolute;
   border-radius: 90%;
-  border:3px solid rgba(166, 166, 166,0.2);
-  left:-20px;
-  top:254px;
+  border: 3px solid rgba(166, 166, 166,0.2);
+  left: -20px;
+  top: 254px;
 }
-#num
-{
+#num {
   position: absolute;
   top: 525px;
-  left:250px;
+  left: 250px;
   list-style-type: none;
 }
-#pics
-{
+#pics {
   position: absolute;
   list-style-type: none;
-  left:-30px;
-  top:-10px;
+  left: -30px;
+  top: -10px;
 }
