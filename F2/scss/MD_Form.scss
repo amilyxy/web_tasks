@@ -1,0 +1,179 @@
+$l-blue:#C8CCE1;
+$ll-blue:#D6D9EC;
+$blue:#9BA3D4;
+$d-blue:#6776C2;
+$dd-blue:#3D4EAF;
+@mixin psit{
+  position: absolute;
+}
+body{
+  background-color:rgb(221, 221, 221);
+  font-family: Helvetica;
+  color: white;
+}
+.white-bcg{
+  @include psit;
+  left: 400px;
+  top:150px;
+  width:440px;
+  height: 340px;
+  background: white;
+}
+.blue-bcg{
+  @include psit;
+  width:400px;
+  height: 300px;
+  margin: 20px;
+  background: $d-blue;
+}
+.Log-frame{
+  @include psit;
+  top: 255px;
+  width:400px;
+  height: 48px;
+  background: $dd-blue;
+  p{
+  cursor: pointer;
+  }
+}
+#Login{
+  @include psit;
+  font-size: 17px;
+  left: 175px;
+  top: 10px;
+  background-color: $dd-blue;
+  color: white;
+  border: none;
+  outline:none;
+}
+#forget{
+  @include psit;
+  font-size: 12px;
+  color: $dd-blue;
+  text-decoration: none;
+  top: 205px;
+  left: 240px;
+}
+#sign{
+  @include psit;
+  left: 180px;
+  top: 20px;
+  font-size: 14px;
+}
+.group{
+  position: relative;
+  left: 60px;
+  top: 50px;
+  margin-top:76px;
+  p{
+    @include psit;
+    top: -25px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.2s ease all;
+  }
+}
+.text {
+  width: 280px;
+  height: 3px;
+  background-color: white;
+  box-shadow: 0px 1px 1px rgb(87, 89, 94);
+  border-radius: 6px;
+  input{
+    width: 80%;
+    height: 100%;
+    padding:0px 10px 0px 10px;
+    float: right;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    letter-spacing: 1px;
+    //border-bottom:5px solid #000000;
+  }
+}
+.password{
+  width: 280px;
+  height: 3px;
+  //background: url(../pics/password.jpg) no-repeat left;
+  background-color: white;
+  box-shadow: 0px 1px 1px rgb(87, 89, 94);
+  background-size: 30px 30px;
+  background-position-x: 4px;
+  border-radius: 6px;
+  input{
+    width: 80%;
+    height: 100%;
+    padding:0px 10px 0px 10px;
+    float: right;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    letter-spacing: 1px;
+    //border-bottom:5px solid #000000;
+  }
+}
+.font-change{
+  font-size: 7px;
+  padding: 3px;
+  color: $ll-blue;
+}
+.right{
+  @include psit;
+  top: 310px;
+  left: 20px;
+  height: 10px;
+  width: 400px;
+  background: $dd-blue;
+}
+.right_bcg{
+  top: 20px;
+  height: 300px;
+  transition:  0.2s ;
+}
+.duigou{
+  @include psit;
+  background: url(../pics/abc.png) no-repeat ;
+  background-size: 50px 50px;
+  top: 140px;
+  left: 200px;
+  height: 50px;
+  width: 0px;
+}
+.duigou_add{
+  width: 50px;
+  transition:  0.4s ;
+}
+.frame-change{
+  height: 41px;
+  border-radius: 6px;
+  transition: 0.2s all;
+}
+.frame-change1{
+  background: url(../pics/text.jpg) no-repeat left;
+  background-color: white;
+  background-size: 30px 30px;
+  background-position-x: 4px;
+  @extend .frame-change;
+}
+.frame-change2{
+  background: url(../pics/password.jpg) no-repeat left;
+  background-color: white;
+  background-size: 30px 30px;
+  background-position-x: 4px;
+  @extend .frame-change;
+}
+.total-change{
+  top: 12px;
+  transition: 0.2s;
+}
+input:focus {
+
+}
+.mouse{
+  width: 50px;height: 50px;background: white;border-radius: 50%;
+  transition: 2s;
+  -moz-transition:  2s;  /* Firefox 4 */
+  -webkit-transition: 2s;  /* Safari and Chrome */
+  -o-transition: 2s;  /* Opera */
+}
