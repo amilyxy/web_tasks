@@ -1,23 +1,27 @@
 $(document).ready(function() {
   var click1 = false
   var click2 = false
-  $("#psw").click(function() {
+  $("form p:eq(1)").click(function() {
+    if(click1 == false)
+      $(".span:eq(1)").addClass("spana")
     $(".password").addClass("frame-change2")
     $(".group").addClass("total-change")
       .css({                               //改变行间距
         "margin-top": "36px",
         "top": "90px"
       })
-    $("#psw").addClass("font-change")
+    $(this).addClass("font-change")
     if(click2){
       $(".group").css("top","52px")
     }
     click1 = true
   })
-  $("#email").click(function() {
+  $("form p:eq(0)").click(function() {
+    if(click2 == false)
+      $(".span:eq(0)").addClass("spana")
     $(".text").addClass("frame-change1")
     $(".group").addClass("total-change")
-    $("#email").addClass("font-change")
+    $(this).addClass("font-change")
     if(click1){
       $(".group").css("top","52px")
     }
@@ -27,6 +31,7 @@ $(document).ready(function() {
     var check = validate_right()
     if(check)
     {
+      $(".span:eq(2)").addClass("spana").css({"left":"180px","top":"5px"})
       $(".right").addClass("right_bcg")
       $(".duigou").addClass("duigou_add")
     }
