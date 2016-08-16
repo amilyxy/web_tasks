@@ -43,6 +43,7 @@ body{
   top: 10px;
   background-color: $dd-blue;
   color: white;
+  border-color: $dd-blue;
   border: none;
   outline:none;
 }
@@ -71,8 +72,8 @@ body{
     display: block;
     margin: 0;
     cursor: pointer;
-    transition: 0.2s ease all;
-    transition-delay: 0.3s;
+    transition: 0.2s all;
+    transition-delay: 0.2s;
   }
 }
 .text {
@@ -115,7 +116,7 @@ body{
   }
 }
 .font-change{
-  font-size: 7px;
+  font-size: 4px;
   padding: 3px;
   color: $ll-blue;
 }
@@ -133,7 +134,7 @@ body{
   top: 20px;
   height: 300px;
   transition:  0.2s ;
-  transition-delay: 0.3s;
+  transition-delay: 0.4s;
 }
 .duigou{
   @include psit;
@@ -147,13 +148,13 @@ body{
 .duigou_add{
   width: 50px;
   transition:  0.4s ;
-  transition-delay: 0.3s;
+  transition-delay: 0.4s;
 }
 .frame-change{
   height: 41px;
   border-radius: 6px;
   transition: 0.2s all;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 .frame-change1{
   background: url(../pics/text.jpg) no-repeat left;
@@ -172,7 +173,7 @@ body{
 .total-change{
   top: 12px;
   transition: 0.2s;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 .spana{
   position: absolute;
@@ -186,6 +187,28 @@ body{
   animation: mouse_enter 0.2s;
 //  transform: translate(-30px,-30px);
   //transition:all 0.6s ease 0s;*/
+}
+.Login_smaller{
+  animation: smaller 0.3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+@keyframes font {
+  from{ top: -25px;}
+  to{
+    top: -20px;
+    //box-shadow: 1px 1px 10px rgb(148, 148, 148);
+  }
+}
+@keyframes smaller {
+  from{font-size: 17px;}
+  to{
+    transform: scale(0.8);
+    //box-shadow: 1px 1px 10px rgb(148, 148, 148);
+  }
+  25%  {opacity: 0.9}
+  50%  {opacity: 0.8}
+  100% {opacity: 0.6}
 }
 @keyframes mouse_enter{
   from{ width: 40px; height: 40px;}

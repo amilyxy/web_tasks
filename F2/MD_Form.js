@@ -10,7 +10,7 @@ $(document).ready(function() {
         "margin-top": "36px",
         "top": "90px"
       })
-    $(this).addClass("font-change")
+    $(this).addClass("font-change").animate({top:'+=5px',left: '+=1px'},"fast")
     if(click2){
       $(".group").css("top","52px")
     }
@@ -21,7 +21,7 @@ $(document).ready(function() {
       $(".span:eq(0)").addClass("spana")
     $(".text").addClass("frame-change1")
     $(".group").addClass("total-change")
-    $(this).addClass("font-change")
+    $(this).addClass("font-change").animate({top:'+=5px',left: '+=1px'},"fast")
     if(click1){
       $(".group").css("top","52px")
     }
@@ -31,6 +31,7 @@ $(document).ready(function() {
     var check = validate_right()
     if(check)
     {
+      $("#Login").css("font-size","17px").addClass("Login_smaller")
       $(".span:eq(2)").addClass("spana").css({"left":"180px","top":"5px"})
       $(".right").addClass("right_bcg")
       $(".duigou").addClass("duigou_add")

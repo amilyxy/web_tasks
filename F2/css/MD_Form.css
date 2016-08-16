@@ -1,8 +1,7 @@
 body {
   background-color: #dddddd;
   font-family: Helvetica;
-  color: white;
-}
+  color: white; }
 
 .white-bcg {
   position: absolute;
@@ -10,27 +9,23 @@ body {
   top: 150px;
   width: 440px;
   height: 340px;
-  background: white;
-}
+  background: white; }
 
 .blue-bcg {
   position: absolute;
   width: 400px;
   height: 300px;
   margin: 20px;
-  background: #6776C2;
-}
+  background: #6776C2; }
 
 .Log-frame {
   position: absolute;
   top: 255px;
   width: 400px;
   height: 48px;
-  background: #3D4EAF;
-}
-.Log-frame p {
-  cursor: pointer;
-}
+  background: #3D4EAF; }
+  .Log-frame p {
+    cursor: pointer; }
 
 #Login {
   position: absolute;
@@ -39,9 +34,9 @@ body {
   top: 10px;
   background-color: #3D4EAF;
   color: white;
+  border-color: #3D4EAF;
   border: none;
-  outline: none;
-}
+  outline: none; }
 
 #forget {
   position: absolute;
@@ -49,49 +44,43 @@ body {
   color: #3D4EAF;
   text-decoration: none;
   top: 205px;
-  left: 240px;
-}
+  left: 240px; }
 
 #sign {
   position: absolute;
   left: 180px;
   top: 20px;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .group {
   position: relative;
   left: 60px;
   top: 50px;
-  margin-top: 76px;
-}
-.group p {
-  position: absolute;
-  top: -25px;
-  display: block;
-  margin: 0;
-  cursor: pointer;
-  transition: 0.2s ease all;
-  transition-delay: 0.3s;
-}
+  margin-top: 76px; }
+  .group p {
+    position: absolute;
+    top: -25px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.2s all;
+    transition-delay: 0.2s; }
 
 .text {
   width: 280px;
   height: 3px;
   background-color: white;
   box-shadow: 0px 1px 1px #57595e;
-  border-radius: 6px;
-}
-.text input {
-  width: 80%;
-  height: 100%;
-  padding: 0px 10px 0px 10px;
-  float: right;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-  letter-spacing: 1px;
-}
+  border-radius: 6px; }
+  .text input {
+    width: 80%;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    float: right;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    letter-spacing: 1px; }
 
 .password {
   width: 280px;
@@ -100,24 +89,21 @@ body {
   box-shadow: 0px 1px 1px #57595e;
   background-size: 30px 30px;
   background-position-x: 4px;
-  border-radius: 6px;
-}
-.password input {
-  width: 80%;
-  height: 100%;
-  padding: 0px 10px 0px 10px;
-  float: right;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-  letter-spacing: 1px;
-}
+  border-radius: 6px; }
+  .password input {
+    width: 80%;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    float: right;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    letter-spacing: 1px; }
 
 .font-change {
-  font-size: 7px;
+  font-size: 4px;
   padding: 3px;
-  color: #D6D9EC;
-}
+  color: #D6D9EC; }
 
 .right {
   position: absolute;
@@ -126,16 +112,14 @@ body {
   height: 10px;
   width: 400px;
   opacity: 0;
-  background: #3D4EAF;
-}
+  background: #3D4EAF; }
 
 .right_bcg {
   opacity: 1;
   top: 20px;
   height: 300px;
   transition: 0.2s;
-  transition-delay: 0.3s;
-}
+  transition-delay: 0.4s; }
 
 .duigou {
   position: absolute;
@@ -144,41 +128,35 @@ body {
   top: 140px;
   left: 200px;
   height: 50px;
-  width: 0px;
-}
+  width: 0px; }
 
 .duigou_add {
   width: 50px;
   transition: 0.4s;
-  transition-delay: 0.3s;
-}
+  transition-delay: 0.4s; }
 
 .frame-change, .frame-change1, .frame-change2 {
   height: 41px;
   border-radius: 6px;
   transition: 0.2s all;
-  transition-delay: 0.3s;
-}
+  transition-delay: 0.2s; }
 
 .frame-change1 {
   background: url(../pics/text.jpg) no-repeat left;
   background-color: white;
   background-size: 30px 30px;
-  background-position-x: 4px;
-}
+  background-position-x: 4px; }
 
 .frame-change2 {
   background: url(../pics/password.jpg) no-repeat left;
   background-color: white;
   background-size: 30px 30px;
-  background-position-x: 4px;
-}
+  background-position-x: 4px; }
 
 .total-change {
   top: 12px;
   transition: 0.2s;
-  transition-delay: 0.3s;
-}
+  transition-delay: 0.2s; }
 
 .spana {
   position: absolute;
@@ -189,27 +167,41 @@ body {
   border-radius: 50%;
   background: white;
   opacity: 0;
-  animation: mouse_enter 0.2s;
-}
+  animation: mouse_enter 0.2s; }
 
+.Login_smaller {
+  animation: smaller 0.3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s; }
+
+@keyframes font {
+  from {
+    top: -25px; }
+  to {
+    top: -20px; } }
+@keyframes smaller {
+  from {
+    font-size: 17px; }
+  to {
+    transform: scale(0.8); }
+  25% {
+    opacity: 0.9; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 0.6; } }
 @keyframes mouse_enter {
   from {
     width: 40px;
-    height: 40px;
-  }
+    height: 40px; }
   to {
     transform: scale(2);
-    box-shadow: 1px 1px 10px #949494;
-  }
+    box-shadow: 1px 1px 10px #949494; }
   25% {
-    opacity: 0.1;
-  }
+    opacity: 0.1; }
   50% {
-    opacity: 0.3;
-  }
+    opacity: 0.3; }
   100% {
-    opacity: 0.6;
-  }
-}
+    opacity: 0.6; } }
 
 /*# sourceMappingURL=MD_Form.css.map */
