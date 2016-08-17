@@ -19,189 +19,147 @@ body {
   background: #6776C2; }
 
 .Log-frame {
-  position: absolute;
-  top: 255px;
+  position: relative;
   width: 400px;
-  height: 48px;
-  background: #3D4EAF; }
-  .Log-frame p {
-    cursor: pointer; }
+  height: 38px;
+  margin-top: 25px;
+  background: #3D4EAF;
+  text-align: center;
+  letter-spacing: 1px; }
 
 #Login {
-  position: absolute;
-  font-size: 17px;
-  left: 175px;
-  top: 10px;
+  margin: 10px;
+  width: 80px;
+  font-size: 18px;
+  border: none;
   background-color: #3D4EAF;
   color: white;
-  border-color: #3D4EAF;
-  border: none;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
 
 #forget {
-  position: absolute;
-  font-size: 12px;
-  color: #3D4EAF;
-  text-decoration: none;
-  top: 205px;
-  left: 240px; }
+  text-decoration: none; }
+  #forget p {
+    margin: 20px 60px 0 0;
+    text-align: right;
+    font-size: 12px;
+    color: #3D4EAF; }
 
 #sign {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  text-align: center; }
+
+label {
   position: absolute;
-  left: 180px;
-  top: 20px;
-  font-size: 14px; }
+  display: block;
+  font-size: 17px;
+  height: 20px;
+  margin: 5px;
+  bottom: 0;
+  cursor: pointer;
+  transition: 0.3s all; }
 
 .group {
   position: relative;
-  left: 60px;
-  top: 50px;
-  margin-top: 76px; }
-  .group p {
-    position: absolute;
-    top: -25px;
-    display: block;
-    margin: 0;
-    cursor: pointer;
-    transition: 0.2s all;
-    transition-delay: 0.2s; }
-
-.text {
   width: 280px;
-  height: 3px;
-  background-color: white;
-  box-shadow: 0px 1px 1px #57595e;
+  height: 61px;
+  margin: auto;
+  border: none;
+  margin-top: 15px;
   border-radius: 6px; }
-  .text input {
-    width: 80%;
-    height: 100%;
-    padding: 0px 10px 0px 10px;
-    float: right;
-    border: none;
-    border-radius: 6px;
-    outline: none;
-    letter-spacing: 1px; }
 
-.password {
-  width: 280px;
+input {
+  position: absolute;
+  display: block;
+  top: 61px;
+  width: 80%;
   height: 3px;
+  padding: 0px 10px 0px 40px;
+  float: right;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  letter-spacing: 1px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); }
+
+input:focus ~ label, input:valid ~ label {
+  top: -6px;
+  font-size: 13px;
+  color: #D6D9EC;
+  animation: font-change 0.3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards; }
+
+input#email-val:focus, input#email-val:valid {
+  background: url(../pics/text.jpg) no-repeat left; }
+
+input#psw-val:focus, input#psw-val:valid {
+  background: url(../pics/password.jpg) no-repeat left; }
+
+.frame-change, input#email-val:focus, input#email-val:valid, input#psw-val:focus, input#psw-val:valid {
+  animation: higher 0.5s;
+  animation-fill-mode: forwards;
   background-color: white;
-  box-shadow: 0px 1px 1px #57595e;
   background-size: 30px 30px;
-  background-position-x: 4px;
-  border-radius: 6px; }
-  .password input {
-    width: 80%;
-    height: 100%;
-    padding: 0px 10px 0px 10px;
-    float: right;
-    border: none;
-    border-radius: 6px;
-    outline: none;
-    letter-spacing: 1px; }
+  background-position-x: 4px; }
 
-.font-change {
-  font-size: 4px;
-  padding: 3px;
-  color: #D6D9EC; }
+.Login_smaller {
+  animation: smaller 0.3s;
+  animation-fill-mode: forwards; }
 
 .right {
   position: absolute;
-  top: 310px;
-  left: 20px;
   height: 10px;
   width: 400px;
-  opacity: 0;
+  bottom: 0px;
   background: #3D4EAF; }
 
 .right_bcg {
-  opacity: 1;
-  top: 20px;
-  height: 300px;
-  transition: 0.2s;
-  transition-delay: 0.4s; }
+  animation: right_pass 0.3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards; }
 
 .duigou {
   position: absolute;
-  background: url(../pics/abc.png) no-repeat;
-  background-size: 50px 50px;
-  top: 140px;
-  left: 200px;
+  top: 110px;
+  left: 180px;
   height: 50px;
-  width: 0px; }
+  width: 0px;
+  background: url(../pics/abc.png) no-repeat;
+  background-size: 50px 50px; }
 
 .duigou_add {
   width: 50px;
   transition: 0.4s;
   transition-delay: 0.4s; }
 
-.frame-change, .frame-change1, .frame-change2 {
-  height: 41px;
-  border-radius: 6px;
-  transition: 0.2s all;
-  transition-delay: 0.2s; }
-
-.frame-change1 {
-  background: url(../pics/text.jpg) no-repeat left;
-  background-color: white;
-  background-size: 30px 30px;
-  background-position-x: 4px; }
-
-.frame-change2 {
-  background: url(../pics/password.jpg) no-repeat left;
-  background-color: white;
-  background-size: 30px 30px;
-  background-position-x: 4px; }
-
-.total-change {
-  top: 12px;
-  transition: 0.2s;
-  transition-delay: 0.2s; }
-
-.spana {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  left: 10px;
-  top: -20px;
-  border-radius: 50%;
-  background: white;
-  opacity: 0;
-  animation: mouse_enter 0.2s; }
-
-.Login_smaller {
-  animation: smaller 0.3s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s; }
-
-@keyframes font {
+@keyframes font-change {
   from {
-    top: -25px; }
+    top: -6px; }
   to {
-    top: -20px; } }
+    top: -2px; } }
 @keyframes smaller {
   from {
-    font-size: 17px; }
+    font-size: 18px; }
   to {
-    transform: scale(0.8); }
+    transform: scale(0.7); }
   25% {
     opacity: 0.9; }
   50% {
     opacity: 0.8; }
   100% {
     opacity: 0.6; } }
-@keyframes mouse_enter {
+@keyframes higher {
   from {
-    width: 40px;
-    height: 40px; }
+    height: 3px; }
   to {
-    transform: scale(2);
-    box-shadow: 1px 1px 10px #949494; }
-  25% {
-    opacity: 0.1; }
-  50% {
-    opacity: 0.3; }
-  100% {
-    opacity: 0.6; } }
+    height: 44px;
+    top: 20px; } }
+@keyframes right_pass {
+  from {
+    height: 10px; }
+  to {
+    height: 300px; } }
 
 /*# sourceMappingURL=MD_Form.css.map */

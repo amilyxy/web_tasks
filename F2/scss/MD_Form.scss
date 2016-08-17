@@ -27,196 +27,155 @@ body{
   background: $d-blue;
 }
 .Log-frame{
-  @include psit;
-  top: 255px;
+  position: relative;
   width:400px;
-  height: 48px;
+  height: 38px;
+  margin-top: 25px;
   background: $dd-blue;
-  p{
-  cursor: pointer;
-  }
+  text-align: center;
+  letter-spacing: 1px;
 }
 #Login{
-  @include psit;
-  font-size: 17px;
-  left: 175px;
-  top: 10px;
+  margin: 10px;
+  width: 80px;
+  font-size: 18px;
+  border: none;
   background-color: $dd-blue;
   color: white;
-  border-color: $dd-blue;
-  border: none;
-  outline:none;
+  outline: none;
+  cursor: pointer;
 }
 #forget{
-  @include psit;
-  font-size: 12px;
-  color: $dd-blue;
   text-decoration: none;
-  top: 205px;
-  left: 240px;
+  p{
+    margin: 20px 60px 0 0;
+    text-align: right;
+    font-size: 12px;
+    color: $dd-blue;
+  }
 }
 #sign{
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+label{
   @include psit;
-  left: 180px;
-  top: 20px;
-  font-size: 14px;
+  //margin: auto;
+  display: block;
+  font-size: 17px;
+  height: 20px;
+  margin: 5px;
+  bottom: 0;
+  cursor: pointer;
+  transition: 0.3s all;
+//  transition-delay: 0.2s;
 }
-.group{
+.group {
   position: relative;
-  left: 60px;
-  top: 50px;
-  margin-top:76px;
-  p{
-    @include psit;
-    top: -25px;
-    display: block;
-    margin: 0;
-    cursor: pointer;
-    transition: 0.2s all;
-    transition-delay: 0.2s;
-  }
-}
-.text {
   width: 280px;
-  height: 3px;
-  background-color: white;
-  box-shadow: 0px 1px 1px rgb(87, 89, 94);
+  height: 61px;
+  margin: auto;
+  //background: url(../pics/text.jpg) no-repeat left;
+//  background-color: white;
+  border: none;
+  margin-top: 15px;
   border-radius: 6px;
-  input{
-    width: 80%;
-    height: 100%;
-    padding:0px 10px 0px 10px;
-    float: right;
-    border: none;
-    border-radius: 6px;
-    outline: none;
-    letter-spacing: 1px;
-    //border-bottom:5px solid #000000;
-  }
 }
-.password{
-  width: 280px;
+input{
+  position: absolute;
+  display: block;
+  top: 61px;
+  width: 80%;
   height: 3px;
-  //background: url(../pics/password.jpg) no-repeat left;
+  padding:0px 10px 0px 40px;
+  float: right;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  letter-spacing: 1px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3)
+}
+input:focus ~label, input:valid ~label {
+  top:-6px;
+  font-size: 13px;
+  color: $ll-blue;
+  animation: font-change 0.3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+input#email-val:focus ,input#email-val:valid {
+  background: url(../pics/text.jpg) no-repeat left;
+  @extend .frame-change;
+}
+input#psw-val:focus ,input#psw-val:valid {
+  background: url(../pics/password.jpg) no-repeat left;
+  @extend .frame-change;
+}
+.frame-change{
+  animation: higher 0.5s;
+  animation-fill-mode:forwards;
   background-color: white;
-  box-shadow: 0px 1px 1px rgb(87, 89, 94);
   background-size: 30px 30px;
   background-position-x: 4px;
-  border-radius: 6px;
-  input{
-    width: 80%;
-    height: 100%;
-    padding:0px 10px 0px 10px;
-    float: right;
-    border: none;
-    border-radius: 6px;
-    outline: none;
-    letter-spacing: 1px;
-    //border-bottom:5px solid #000000;
-  }
 }
-.font-change{
-  font-size: 4px;
-  padding: 3px;
-  color: $ll-blue;
+.Login_smaller{
+  animation: smaller 0.3s;
+  animation-fill-mode: forwards;
 }
 .right{
   @include psit;
-  top: 310px;
-  left: 20px;
   height: 10px;
   width: 400px;
-  opacity: 0;
+  bottom: 0px;
   background: $dd-blue;
 }
 .right_bcg{
-  opacity: 1;
-  top: 20px;
-  height: 300px;
-  transition:  0.2s ;
-  transition-delay: 0.4s;
+  animation: right_pass 0.3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 .duigou{
   @include psit;
-  background: url(../pics/abc.png) no-repeat ;
-  background-size: 50px 50px;
-  top: 140px;
-  left: 200px;
+  top: 110px;
+  left: 180px;
   height: 50px;
   width: 0px;
+  background: url(../pics/abc.png) no-repeat ;
+  background-size: 50px 50px;
 }
 .duigou_add{
   width: 50px;
   transition:  0.4s ;
   transition-delay: 0.4s;
 }
-.frame-change{
-  height: 41px;
-  border-radius: 6px;
-  transition: 0.2s all;
-  transition-delay: 0.2s;
-}
-.frame-change1{
-  background: url(../pics/text.jpg) no-repeat left;
-  background-color: white;
-  background-size: 30px 30px;
-  background-position-x: 4px;
-  @extend .frame-change;
-}
-.frame-change2{
-  background: url(../pics/password.jpg) no-repeat left;
-  background-color: white;
-  background-size: 30px 30px;
-  background-position-x: 4px;
-  @extend .frame-change;
-}
-.total-change{
-  top: 12px;
-  transition: 0.2s;
-  transition-delay: 0.2s;
-}
-.spana{
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  left: 10px;
-  top: -20px;
-  border-radius: 50%;
-  background: white;
-  opacity: 0;
-  animation: mouse_enter 0.2s;
-//  transform: translate(-30px,-30px);
-  //transition:all 0.6s ease 0s;*/
-}
-.Login_smaller{
-  animation: smaller 0.3s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
-}
-@keyframes font {
-  from{ top: -25px;}
+@keyframes font-change {
+  from{ top: -6px;}
   to{
-    top: -20px;
+    top: -2px;
     //box-shadow: 1px 1px 10px rgb(148, 148, 148);
   }
 }
 @keyframes smaller {
-  from{font-size: 17px;}
+  from{font-size: 18px;}
   to{
-    transform: scale(0.8);
+    transform: scale(0.7);
     //box-shadow: 1px 1px 10px rgb(148, 148, 148);
   }
   25%  {opacity: 0.9}
   50%  {opacity: 0.8}
   100% {opacity: 0.6}
 }
-@keyframes mouse_enter{
-  from{ width: 40px; height: 40px;}
+@keyframes higher {
+  from{   height: 3px;}
   to{
-     transform: scale(2);
-     box-shadow: 1px 1px 10px rgb(148, 148, 148);
+      height: 44px;
+      top:20px;
      }
-     25%  {opacity: 0.1}
-     50%  {opacity: 0.3}
-     100% {opacity: 0.6}
+}
+@keyframes right_pass {
+  from{ height: 10px;}
+  to{
+    height: 300px;
+  }
 }
