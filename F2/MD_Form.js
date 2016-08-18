@@ -58,7 +58,7 @@ function validate_empty() {
     var emailval = document.getElementById("email-val").value
     var not_empty = validate_empty()
     var email = document.getElementById("email-val").value
-    var check = /^[\w_\-\.]{2,20}@[\w]{2,10}\.[a-z]{2,3}(\.[a-z]{2})?/
+    var check = /^[\w_\-\.]{2,20}@[\w]{2,10}\.[a-z]{2,3}(\.[a-z]{2})?$/
 /* ^表示开头 \w=[a-zA-Z0-9]  g全局匹配(好像用不着)*/
 /*要求： 用户名只能包含字母数字以及下划线短线+@xxx+.xxx(+.xx()(.cn))*/
 /*可以用/../ 也可以用RegExp(new) */
