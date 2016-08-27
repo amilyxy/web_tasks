@@ -5,4 +5,4 @@ F3/node_modules/*
 
 # 忽略sass生成的不必要的map和cache文件 (F3是gulp监听所以没有生成.map .sass-cache)
 F2/.sass-cache/*
-F2/*.map
+*.map
