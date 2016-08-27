@@ -1,0 +1,22 @@
+{
+  "name": "design",
+  "version": "0.0.1",
+  "description": "package information",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "amilyxy",
+    "email": "amilyxy@163.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jQuery": "^1.7.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
